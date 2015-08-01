@@ -1,0 +1,81 @@
+body {
+	background-image: url("/DistributoreWebStruts/image/background.jpg");
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-family: 'Engravers MT', Georgia;
+	width: 100%;
+	border-top: 6px dotted #0E4005;
+	border-bottom: 6px dotted #0E4005;
+	color:white;
+}
+
+#menuPrincipale {
+	margin:0 auto;
+	float:none;
+	width: 1100px;
+	height: 210px;
+}
+
+#menuPrincipale .gestioneDistributore {
+	float: left;
+	height: 77px;
+	width: 312px;
+	border-radius: 10px;
+	border:2px solid black;
+	margin:10px;
+	text-align: center;
+}
+
+#menuPrincipale .gestioneTessere {
+	float: left;
+	height: 77px;
+	width: 355px;
+	border-radius: 10px;
+	border:2px solid black;
+	margin:10px;
+	text-align: center;
+}
+
+#menuPrincipale .erogazione {
+	float: left;
+	height: 77px;
+	width: 355px;
+	border-radius: 10px;
+	border:2px solid black;
+	margin:10px;	
+	text-align: center;
+}
+
+#menuPrincipale a {
+	text-decoration: none;
+	font-family: Georgia;
+	font-weight:bold;
+	font-size:30px;
+	color:white;
+}
+
+#language {
+	width:150px;
+	margin-left:70px;
+	text-shadow: 5px 5px #0E4005;
+}
+
+#language .eng {
+	width: 89px;
+	float:left;
+}
+
+#language .ita {
+	width: 89px;
+	float:right;
+}
+
+#language a {
+	text-decoration:none;
+	font-family: 'Engravers MT', Verdana;
+	color: white;
+	font-size:25px;
+}

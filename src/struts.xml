@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+<struts>
+	<constant name="struts.devMode" value="true"/>
+	<constant name="struts.custom.i18n.resources" value="global"/>
+ 	
+	<package name="default" extends="struts-default">
+		
+		<action name="index" class="distributore.actions.Index">
+			<interceptor-ref name="i18n"/>
+     		<interceptor-ref name="basicStack"/>
+			<result name="success">/index.jsp</result>
+		</action>
+		
+		
+		<action name="gestioneDistributore" class="distributore.actions.Index">
+			<result>/pages/gestioneDistributore/gestioneDistributore.jsp</result>
+		</action>
+		
+		<action name="gestioneTessere" class="distributore.actions.Index">
+			<result>/pages/gestioneTessere/gestioneTessere.jsp</result>
+		</action>
+		
+		<action name="erogazione" class="distributore.actions.Index">
+			<result>/pages/erogazione/erogazione.jsp</result>
+		</action>
+		
+		<action name="aggiornaColonnaLink" class="distributore.actions.Index">
+			<result>/pages/gestioneDistributore/aggiornaColonna.jsp</result>
+		</action>
+		
+		<action name="aggiungiBevandaLink" class="distributore.actions.Index">
+			<result>/pages/gestioneDistributore/aggiungiBevanda.jsp</result>
+		</action>
+		
+		<action name="aggiungiTesseraLink" class="distributore.actions.Index">
+			<result>/pages/gestioneTessere/aggiungiTessera.jsp</result>
+		</action>
+		
+		<action name="erogaLink" class="distributore.actions.Index">
+			<result>/pages/erogazione/eroga.jsp</result>
+		</action>
+		
+		<action name="lattineDisponibiliLink" class="distributore.actions.Index">
+			<result>/pages/erogazione/lattineDisponibili.jsp</result>
+		</action>
+		
+		<action name="ricaricaTesseraLink" class="distributore.actions.Index">
+			<result>/pages/erogazione/ricaricaTessera.jsp</result>
+		</action>		
+		
+		<action name="indietro" class="distributore.actions.Index">
+			<result>/</result>
+		</action>
+			
+			
+			
+			
+		<action name="aggiornaColonna" class="distributore.actions.AggiornaColonna">
+			<result name="success">/pages/gestioneDistributore/aggiornaColonna.jsp</result>
+			<result name="input">/pages/gestioneDistributore/aggiornaColonna.jsp</result>
+		</action>
+		
+		<action name="aggiungiBevanda" class="distributore.actions.AggiungiBevanda">
+			<result name="success">/pages/gestioneDistributore/aggiungiBevanda.jsp</result>
+			<result name="input">/pages/gestioneDistributore/aggiungiBevanda.jsp</result>
+		</action>
+				
+		<action name="visualizzaBevande" class="distributore.actions.VisualizzaBevande">
+			<result name="success">/pages/gestioneDistributore/visualizzaBevande.jsp</result>
+			<result name="input">/pages/gestioneDistributore/visualizzaBevande.jsp</result>
+		</action>		
+				
+		<action name="aggiungiTessera" class="distributore.actions.AggiungiTessera">
+			<result name="success">/pages/gestioneTessere/aggiungiTessera.jsp</result>
+			<result name="input">/pages/gestioneTessere/aggiungiTessera.jsp</result>
+		</action>
+		
+		<action name="visualizzaTessere" class="distributore.actions.VisualizzaTessere">
+			<result name="success">/pages/gestioneTessere/visualizzaTessere.jsp</result>
+			<result name="input">/pages/gestioneTessere/visualizzaTessere.jsp</result>
+		</action>
+		
+		<action name="eroga" class="distributore.actions.EffettuaErogazione">
+			<result name="success">/pages/erogazione/eroga.jsp</result>
+			<result name="input">/pages/erogazione/eroga.jsp</result>
+		</action>
+		
+		<action name="lattineDisponibili" class="distributore.actions.NumeroLattine">
+			<result name="success">/pages/erogazione/lattineDisponibili.jsp</result>
+			<result name="input">/pages/erogazione/lattineDisponibili.jsp</result>
+		</action>
+		
+		<action name="ricaricaTessera" class="distributore.actions.RicaricaTessera">
+			<result name="success">/pages/erogazione/ricaricaTessera.jsp</result>
+			<result name="input">/pages/erogazione/ricaricaTessera.jsp</result>
+		</action>
+			
+		<action name="visualizzaDistributore" class="distributore.actions.VisualizzaDistributore">
+			<result name="success">/pages/erogazione/visualizzaDistributore.jsp</result>
+			<result name="input">/pages/erogazione/visualizzaDistributore.jsp</result>
+		</action>
+	</package>
+</struts>

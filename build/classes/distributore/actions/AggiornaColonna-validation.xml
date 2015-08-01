@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+	<field name="codice">
+		<field-validator type="requiredstring">
+			<message key="campoObbligatorio"></message>
+		</field-validator>
+	</field>
+	
+	<field name="numColonna">
+		<field-validator type="requiredstring">
+			<message key="campoObbligatorio"></message>
+		</field-validator>
+		<field-validator type="double">
+			<param name="minInclusive">1</param>
+          	<param name="maxInclusive">4</param>
+			<message key="restrizione.numColonna"></message>
+		</field-validator>
+	</field>
+</validators>
